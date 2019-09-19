@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:gravity="center"
+              android:layout_gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/_500sdp"
+              android:layout_margin="10dp">
+
+    <LinearLayout
+            android:gravity="right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_10sdp">
+
+        <ImageView
+                android:id="@+id/closebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#33000000"
+                android:visibility="visible"
+                android:padding="@dimen/_5sdp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_close_black_24dp"
+                android:layout_margin="@dimen/_10sdp"/>
+    </LinearLayout>
+
+
+    <com.otaliastudios.zoom.ZoomImageView
+            android:id="@+id/imgDialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_minus49sdp"
+            app:transformation="centerInside"
+            app:transformationGravity="auto"
+            app:alignment="center"
+            android:scaleType="fitXY"
+            app:overScrollHorizontal="true"
+            app:overScrollVertical="true"
+            app:overPinchable="true"
+            app:horizontalPanEnabled="true"
+            app:verticalPanEnabled="true"
+            app:zoomEnabled="true"
+            app:flingEnabled="true"
+            app:minZoom="1"
+            app:minZoomType="zoom"
+            app:maxZoom="3"
+            app:maxZoomType="zoom"
+            app:animationDuration="280"/>
+
+
+</LinearLayout>

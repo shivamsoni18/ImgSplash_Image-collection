@@ -1,0 +1,28 @@
+<com.otaliastudios.zoom.ZoomLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="1000px"
+        android:layout_height="1700px"
+        android:scrollbars="vertical|horizontal"
+        app:transformation="centerInside"
+        app:transformationGravity="auto"
+        app:alignment="center"
+        app:overScrollHorizontal="true"
+        app:overScrollVertical="true"
+        app:overPinchable="true"
+        app:horizontalPanEnabled="true"
+        app:verticalPanEnabled="true"
+        app:zoomEnabled="true"
+        app:flingEnabled="true"
+        app:minZoom="1"
+        app:minZoomType="zoom"
+        app:maxZoom="3"
+        app:maxZoomType="zoom"
+        app:animationDuration="280" app:hasClickableChildren="true">
+
+
+    <com.otaliastudios.zoom.ZoomImageView
+            android:id="@+id/imgDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+</com.otaliastudios.zoom.ZoomLayout>
