@@ -15,9 +15,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".SimpleMVVM.newActivity">
 
-        </activity>
         <activity
                 android:name=".SplashScreen"
                 android:screenOrientation="portrait"
